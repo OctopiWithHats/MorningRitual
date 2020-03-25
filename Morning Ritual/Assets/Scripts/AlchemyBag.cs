@@ -5,17 +5,31 @@ using UnityEngine.UI;
 
 public class AlchemyBag : MonoBehaviour {
 
-    public Button alchemyBag;
-    public Button backButton;
-    public GameObject alchemyPanel;
-    public AudioSource sounds;
-    public AudioClip clothBag;
-    public AudioClip layerTone;
+    //Game objects for alchemy bag
+    [SerializeField]
+    private Button alchemyBag;
+    [SerializeField]
+    private Button backButton;
+    [SerializeField]
+    private GameObject alchemyPanel;
 
-    public Button codeBookButton;
-    public Button alchemyBookButton;
-    public Button tarotBookButton;
-    public Button tarotDeckButton;
+    //sounds for alchemy bag
+    [SerializeField]
+    private AudioSource sounds;
+    [SerializeField]
+    private AudioClip clothBag;
+    [SerializeField]
+    private AudioClip layerTone;
+
+    //Game objects for books and decks
+    [SerializeField]
+    private Button codeBookButton;
+    [SerializeField]
+    private Button alchemyBookButton;
+    [SerializeField]
+    private Button tarotBookButton;
+    [SerializeField]
+    private Button tarotDeckButton;
 
 	// Use this for initialization
 	void Start () {
@@ -36,10 +50,12 @@ public class AlchemyBag : MonoBehaviour {
 
     public void OpenBag()
     {
+        //show the alchemy panel, play the appropriate sounds
         alchemyPanel.SetActive(true);
         sounds.GetComponent<AudioSource>().clip = clothBag;
         sounds.GetComponent<AudioSource>().Play();
 
+        //make sure that the player can't interact with the things behind the alchemy panel
         codeBookButton.interactable = !codeBookButton.interactable;
         alchemyBookButton.interactable = !alchemyBookButton.interactable;
         tarotBookButton.interactable = !tarotBookButton.interactable;
@@ -49,8 +65,10 @@ public class AlchemyBag : MonoBehaviour {
 
     public void BackButton()
     {
+        //close the alchemy panel
         alchemyPanel.SetActive(false);
 
+        //make other items interactable again
         codeBookButton.interactable = !codeBookButton.interactable;
         alchemyBookButton.interactable = !alchemyBookButton.interactable;
         tarotBookButton.interactable = !tarotBookButton.interactable;
