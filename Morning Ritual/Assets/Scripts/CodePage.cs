@@ -5,13 +5,21 @@ using UnityEngine.UI;
 
 public class CodePage : MonoBehaviour {
 
-    public Button openPage;
-    public GameObject codePage;
-    public Button closePage;
+    //game objects for the code page
+    [SerializeField]
+    private Button openPage;
+    [SerializeField]
+    private GameObject codePage;
+    [SerializeField]
+    private Button closePage;
 
-    public AudioSource sounds;
-    public AudioClip pageTurn;
-    public AudioClip layerTone;
+    //sounds for the code page
+    [SerializeField]
+    private AudioSource sounds;
+    [SerializeField]
+    private AudioClip pageTurn;
+    [SerializeField]
+    private AudioClip layerTone;
 
     // Use this for initialization
     void Start () {
@@ -31,15 +39,23 @@ public class CodePage : MonoBehaviour {
 
     public void OpenBook()
     {
+        //open the code page
         codePage.SetActive(true);
+        
+        //play the appropraiate sounds
         sounds.GetComponent<AudioSource>().clip = pageTurn;
         sounds.GetComponent<AudioSource>().Play();
+
+        //deactivate the open button
         openPage.interactable = !openPage.interactable;
     }
 
     public void CloseBook()
     {
+        //close the page
         codePage.SetActive(false);
+
+        //reactivate the open button
         openPage.interactable = !openPage.interactable;
     }
 }
