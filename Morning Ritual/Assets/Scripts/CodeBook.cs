@@ -5,18 +5,31 @@ using UnityEngine.UI;
 
 public class CodeBook : MonoBehaviour {
 
-    public Button codeBook;
-    public GameObject openBook;
-    public Button backButton;
+    //GameObejcts for code book
+    [SerializeField]
+    private Button codeBook;
+    [SerializeField]
+    private GameObject openBook;
+    [SerializeField]
+    private Button backButton;
 
-    public AudioSource sounds;
-    public AudioClip pageTurn;
-    public AudioClip layerTone;
+    //sounds for code book
+    [SerializeField]
+    private AudioSource sounds;
+    [SerializeField]
+    private AudioClip pageTurn;
+    [SerializeField]
+    private AudioClip layerTone;
 
-    public Button tarotBookButton;
-    public Button alchemyBookButton;
-    public Button tarotDeckButton;
-    public Button alchemyBagButton;
+    //buttons for other interactables
+    [SerializeField]
+    private Button tarotBookButton;
+    [SerializeField]
+    private Button alchemyBookButton;
+    [SerializeField]
+    private Button tarotDeckButton;
+    [SerializeField]
+    private Button alchemyBagButton;
 
     // Use this for initialization
     void Start () {
@@ -37,10 +50,13 @@ public class CodeBook : MonoBehaviour {
 
     public void OpenBook()
     {
+        //open the code book
         openBook.SetActive(true);
+        //play code book sounds
         sounds.GetComponent<AudioSource>().clip = pageTurn;
         sounds.GetComponent<AudioSource>().Play();
 
+        //make other items uninteractable
         tarotBookButton.interactable = !tarotBookButton.interactable;
         alchemyBookButton.interactable = !alchemyBookButton.interactable;
         tarotDeckButton.interactable = !tarotDeckButton.interactable;
@@ -49,7 +65,10 @@ public class CodeBook : MonoBehaviour {
 
     public void CloseBook()
     {
+        //close code book
         openBook.SetActive(false);
+        
+        //make other items interactable
         tarotBookButton.interactable = !tarotBookButton.interactable;
         alchemyBookButton.interactable = !alchemyBookButton.interactable;
         tarotDeckButton.interactable = !tarotDeckButton.interactable;
