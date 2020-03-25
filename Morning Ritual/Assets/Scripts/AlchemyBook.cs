@@ -5,22 +5,40 @@ using UnityEngine.UI;
 
 public class AlchemyBook : MonoBehaviour {
 
-    public Button alchemyBook;
-    public GameObject openBook;
-    public GameObject[] pages;
-    public Button backButton;
-    public Button nextPage;
-    public Button prevPage;
-    public GameObject currentPage;
-    public int pageNumber;
+    //GameObjects related to the alchemy book
+    [SerializeField]
+    private Button alchemyBook;
+    [SerializeField]
+    private GameObject openBook;
+    [SerializeField]
+    private GameObject[] pages;
+    [SerializeField]
+    private Button backButton;
+    [SerializeField]
+    private Button nextPage;
+    [SerializeField]
+    private Button prevPage;
+    [SerializeField]
+    private GameObject currentPage;
+    [SerializeField]
+    private int pageNumber;
 
-    public AudioSource sounds;
+    //audio for alchemy book
+    [SerializeField]
+    private AudioSource sounds;
+    [SerializeField]
     public AudioClip pageTurn;
+    [SerializeField]
     public AudioClip layerTone;
 
-    public Button codeBookButton;
+    //buttons for the other interactables
+    [SerializeField]
+    private Button codeBookButton;
+    [SerializeField]
     public Button tarotBookButton;
+    [SerializeField]
     public Button tarotDeckButton;
+    [SerializeField]
     public Button alchemyBagButton;
 
     // Use this for initialization
@@ -43,10 +61,13 @@ public class AlchemyBook : MonoBehaviour {
 
     public void OpenBook()
     {
+        //open the alchemy book
         openBook.SetActive(true);
+        //play the sounds for the alchemy book
         sounds.GetComponent<AudioSource>().clip = pageTurn;
         sounds.GetComponent<AudioSource>().Play();
 
+        //make sure that the player can't accidentally interact with anything else while the alchemy book is open
         codeBookButton.interactable = !codeBookButton.interactable;
         tarotBookButton.interactable = !tarotBookButton.interactable;
         tarotDeckButton.interactable = !tarotDeckButton.interactable;
@@ -55,8 +76,11 @@ public class AlchemyBook : MonoBehaviour {
 
     public void CloseBook()
     {
+        //close the alchemy book
         openBook.SetActive(false);
         pageNumber = 0;
+        
+        //make other things on the table interactable again
         codeBookButton.interactable = !codeBookButton.interactable;
         tarotBookButton.interactable = !tarotBookButton.interactable;
         tarotDeckButton.interactable = !tarotDeckButton.interactable;
@@ -65,6 +89,7 @@ public class AlchemyBook : MonoBehaviour {
 
     public void NextPage()
     {
+        //make sure we go to the correct page in the array of pages
         if (currentPage == pages[0])
         {
             pages[0].SetActive(false);
@@ -94,6 +119,7 @@ public class AlchemyBook : MonoBehaviour {
 
     public void PrevPage()
     {
+        //make sure we go to the correct page in the array of pages
         if (currentPage == pages[1])
         {
             pages[1].SetActive(false);
