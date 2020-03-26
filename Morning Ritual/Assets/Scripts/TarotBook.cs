@@ -5,23 +5,41 @@ using UnityEngine.UI;
 
 public class TarotBook : MonoBehaviour {
 
-    public Button tarotBook;
-    public GameObject openBook;
-    public GameObject[] pages;
-    public Button backButton;
-    public Button nextButton;
-    public Button prevButton;
-    public GameObject currentPage;
-    public int pageNumber;
+    //game objects
+    [SerializeField]
+    private Button tarotBook;
+    [SerializeField]
+    private GameObject openBook;
+    [SerializeField]
+    private GameObject[] pages;
+    [SerializeField]
+    private Button backButton;
+    [SerializeField]
+    private Button nextButton;
+    [SerializeField]
+    private Button prevButton;
+    private GameObject currentPage;
+    [SerializeField]
+    private int pageNumber;
 
-    public AudioSource sounds;
-    public AudioClip pageTurn;
-    public AudioClip layerTone;
 
-    public Button codeBookButton;
-    public Button alchemyBookButton;
-    public Button tarotDeckButton;
-    public Button alchemyBagButton;
+    //audio
+    [SerializeField]
+    private AudioSource sounds;
+    [SerializeField]
+    private AudioClip pageTurn;
+    [SerializeField]
+    private AudioClip layerTone;
+
+    //buttons for other items on table
+    [SerializeField]
+    private Button codeBookButton;
+    [SerializeField]
+    private Button alchemyBookButton;
+    [SerializeField]
+    private Button tarotDeckButton;
+    [SerializeField]
+    private Button alchemyBagButton;
 
 	// Use this for initialization
 	void Start () {

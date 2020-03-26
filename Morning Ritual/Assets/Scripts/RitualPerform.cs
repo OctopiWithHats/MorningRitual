@@ -5,16 +5,26 @@ using UnityEngine.UI;
 
 public class RitualPerform : MonoBehaviour {
 
-    public Button correctCard;
-    public Button correctStone;
-    public Button[] otherCards;
-    public Button[] otherStones;
-    public GameObject ritualCard;
-    public GameObject ritualStone;
+    [SerializeField]
+    private Button correctCard;
+    [SerializeField]
+    private Button correctStone;
+    [SerializeField]
+    private Button[] otherCards;
+    [SerializeField]
+    private Button[] otherStones;
+    [SerializeField]
+    private GameObject ritualCard;
+    [SerializeField]
+    private GameObject ritualStone;
 
-    public AudioSource chimeSource;
-    public AudioClip rightChime;
-    public AudioClip wrongChime;
+    //sounds
+    [SerializeField]
+    private AudioSource chimeSource;
+    [SerializeField]
+    private AudioClip rightChime;
+    [SerializeField]
+    private AudioClip wrongChime;
 
 	// Use this for initialization
 	void Start () {

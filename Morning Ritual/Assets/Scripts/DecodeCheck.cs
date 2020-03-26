@@ -5,10 +5,15 @@ using UnityEngine.UI;
 
 public class DecodeCheck : MonoBehaviour {
 
-    public InputField codeBlank;
-    public string correctCharacter;
-    public string correctCharacter2;
-    public string inputText;
+    //game objects
+    [SerializeField]
+    private InputField codeBlank;
+    [SerializeField]
+    private string correctCharacter;
+    [SerializeField]
+    private string correctCharacter2;
+    [SerializeField]
+    private string inputText;
 
     // Use this for initialization
     void Start() {

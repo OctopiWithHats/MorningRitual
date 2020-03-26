@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class InstructionScreen : MonoBehaviour {
 
-    public Button instructionButton;
-    public GameObject instructions;
+    [SerializeField]
+    private Button instructionButton;
+    [SerializeField]
+    private GameObject instructions;
 
 	// Use this for initialization
 	void Start () {

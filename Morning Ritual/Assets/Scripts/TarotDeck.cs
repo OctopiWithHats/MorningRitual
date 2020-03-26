@@ -5,17 +5,28 @@ using UnityEngine.UI;
 
 public class TarotDeck : MonoBehaviour {
 
-    public Button tarotBox;
-    public Button backButton;
-    public GameObject tarotCardPanel;
+    [SerializeField]
+    private Button tarotBox;
+    [SerializeField]
+    private Button backButton;
+    [SerializeField]
+    private GameObject tarotCardPanel;
 
-    public AudioSource sounds;
-    public AudioClip layerTone;
+    //sounds
+    [SerializeField]
+    private AudioSource sounds;
+    [SerializeField]
+    private AudioClip layerTone;
 
-    public Button codeBookButton;
-    public Button alchemyBookButton;
-    public Button tarotBookButton;
-    public Button alchemyBagButton;
+    //other items on table
+    [SerializeField]
+    private Button codeBookButton;
+    [SerializeField]
+    private Button alchemyBookButton;
+    [SerializeField]
+    private Button tarotBookButton;
+    [SerializeField]
+    private Button alchemyBagButton;
 
 	// Use this for initialization
 	void Start () {

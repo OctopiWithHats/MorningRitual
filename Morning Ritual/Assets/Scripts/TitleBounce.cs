@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class TitleBounce : MonoBehaviour {
 
-    public float speedX;
-    public float speedY;
+    [SerializeField]
+    private float speedX;
+    [SerializeField]
+    private float speedY;
     private Rigidbody2D rb;
 
 	// Use this for initialization
