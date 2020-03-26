@@ -5,16 +5,24 @@ using UnityEngine.UI;
 
 public class WinState : MonoBehaviour {
 
-    public GameObject correctCard;
-    public GameObject correctStone;
-    public GameObject[] codeBlocks;
+    [SerializeField]
+    private GameObject correctCard;
+    [SerializeField]
+    private GameObject correctStone;
+    [SerializeField]
+    private GameObject[] codeBlocks;
 
-    public GameObject winImage;
+    [SerializeField]
+    private GameObject winImage;
 
-    public AudioSource sounds;
-    public AudioClip winSound;
-    public GameObject performRitual;
-    public Button ritualButton;
+    [SerializeField]
+    private AudioSource sounds;
+    [SerializeField]
+    private AudioClip winSound;
+    [SerializeField]
+    private GameObject performRitual;
+    [SerializeField]
+    private Button ritualButton;
     //public AudioSource background;
 
 
