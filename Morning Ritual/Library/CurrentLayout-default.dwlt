@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 710, y: 492}
   m_MaxSize: {x: 18005, y: 14042}
   vertical: 0
-  controlID: 12236
+  controlID: 7696
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 12301
+  controlID: 7697
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
