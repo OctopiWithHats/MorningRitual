@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 710, y: 492}
   m_MaxSize: {x: 18005, y: 14042}
   vertical: 0
-  controlID: 659
+  controlID: 6714
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 638
+  controlID: 6693
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 572
+  controlID: 6613
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,8 +183,8 @@ MonoBehaviour:
     y: 0
     width: 300
     height: 434
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -218,10 +218,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 120}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f4caffff7cceffff5ed2ffffd4d2fffff2d2ffff18d3ffff2ad3ffffd4dafffff0ddffffd0e0ffff06e6ffffc8e6ffff42f6ffff76f6ffff46f8ffff58f8ffff8cf9ffff74fbffff9c3800009c5b00006e5c0000a85c0000ee65000070670000e067000050680000066a0000e46b0000e46e0000f06e000092730000b274000014750000cc980000769e00005abc000038c10000dc000100288601008693010006a10100b8a60100e2b3010016b40100f4b80100
+      m_ExpandedIDs: d4faffff74fbffff124800003e4900000a510000be520000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 443.5831, y: 184.93451, z: -67.24792}
+    m_Target: {x: 105.96762, y: 107.330795, z: -148.4835}
     speed: 2
-    m_Value: {x: 443.5831, y: 184.93451, z: -67.24792}
+    m_Value: {x: 105.96762, y: 107.330795, z: -148.4835}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -360,9 +360,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 620.5668
+    m_Target: 201.20781
     speed: 2
-    m_Value: 620.5668
+    m_Value: 201.20781
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 11744
+  controlID: 6694
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -504,11 +504,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Oracle\Desktop\NYU\IntermediateProgramming\MidtermGame\Morning
     Ritual
@@ -516,9 +516,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 58420000
-    m_LastClickedID: 16984
-    m_ExpandedIDs: 000000004a4200004c42000000ca9a3b
+    m_SelectedIDs: 56420000
+    m_LastClickedID: 16982
+    m_ExpandedIDs: 00000000464200004842000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -546,7 +546,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a4200004c42000000ca9a3b
+    m_ExpandedIDs: 00000000464200004842000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -571,8 +571,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: e8caffff
-    m_LastClickedInstanceID: -13592
+    m_SelectedInstanceIDs: 0a510000
+    m_LastClickedInstanceID: 20746
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000002450000ce43000050420000a44200005842000010460000de4200003e4600004a45000000000000
     m_RenameOverlay:
