@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\DecodeCheck.cs" />
     <Compile Include="Assets\Scripts\GoToScene.cs" />
     <Compile Include="Assets\Scripts\InstructionScreen.cs" />
+    <Compile Include="Assets\Scripts\RandomScene.cs" />
     <Compile Include="Assets\Scripts\RitualPerform.cs" />
     <Compile Include="Assets\Scripts\SceneFade.cs" />
     <Compile Include="Assets\Scripts\TarotBook.cs" />
