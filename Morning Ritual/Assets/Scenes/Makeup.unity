@@ -8947,7 +8947,6 @@ GameObject:
   - component: {fileID: 436760236}
   - component: {fileID: 436760235}
   - component: {fileID: 436760234}
-  - component: {fileID: 436760233}
   - component: {fileID: 436760232}
   - component: {fileID: 436760231}
   - component: {fileID: 436760230}
@@ -9091,22 +9090,6 @@ MonoBehaviour:
   correctCharacter: S
   correctCharacter2: s
   inputText: 
---- !u!114 &436760233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436760224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a163eec213bb1b489389e77f6e4cbb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  codeBlank: {fileID: 0}
-  correctCharacter: R
-  correctCharacter2: r
-  inputText: 
 --- !u!114 &436760234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9120,8 +9103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   codeBlank: {fileID: 905695128}
-  correctCharacter: E
-  correctCharacter2: e
+  correctCharacter: Y
+  correctCharacter2: y
   inputText: 
 --- !u!114 &436760235
 MonoBehaviour:
@@ -9136,8 +9119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   codeBlank: {fileID: 1499565048}
-  correctCharacter: T
-  correctCharacter2: t
+  correctCharacter: D
+  correctCharacter2: d
   inputText: 
 --- !u!114 &436760236
 MonoBehaviour:
@@ -9152,8 +9135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   codeBlank: {fileID: 1702909583}
-  correctCharacter: A
-  correctCharacter2: a
+  correctCharacter: O
+  correctCharacter2: o
   inputText: 
 --- !u!114 &436760237
 MonoBehaviour:
@@ -9168,8 +9151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   codeBlank: {fileID: 911736139}
-  correctCharacter: W
-  correctCharacter2: w
+  correctCharacter: B
+  correctCharacter2: b
   inputText: 
 --- !u!114 &436760238
 MonoBehaviour:
