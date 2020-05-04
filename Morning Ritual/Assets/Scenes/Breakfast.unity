@@ -14903,7 +14903,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 115591945}
-        m_MethodName: RitualCard
+        m_MethodName: WrongChoice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15073,7 +15073,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 115591945}
-        m_MethodName: WrongChoice
+        m_MethodName: RitualCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
