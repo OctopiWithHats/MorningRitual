@@ -5522,8 +5522,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNames:
-  - Greybox
-  - Scenario2
+  - Breakfast
+  - BrushTeeth
+  - MakeBed
+  - Makeup
 --- !u!1 &286456016
 GameObject:
   m_ObjectHideFlags: 0

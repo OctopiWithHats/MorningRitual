@@ -13,7 +13,7 @@ public class RandomScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        chosenScene = sceneNames[Random.Range(0, sceneNames.Length)];
+        ChooseScene();
     }
 
     // Update is called once per frame
@@ -24,6 +24,7 @@ public class RandomScene : MonoBehaviour
 
     public void LoadScene()
     {
+        ChooseScene();
         SceneManager.LoadScene(chosenScene);
     }
 
@@ -31,5 +32,10 @@ public class RandomScene : MonoBehaviour
     static public void LoadSceneNamed(string name)
     {
         SceneManager.LoadScene(name);
+    }
+
+    public void ChooseScene()
+    {
+        chosenScene = sceneNames[Random.Range(0, sceneNames.Length)];
     }
 }
