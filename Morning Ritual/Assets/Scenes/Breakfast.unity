@@ -12588,7 +12588,6 @@ MonoBehaviour:
   fadeImage: {fileID: 46936569}
   fadeSpeed: 1.5
   sceneStarting: 1
-  sceneName: TitleScreen
 --- !u!1 &560420925
 GameObject:
   m_ObjectHideFlags: 0

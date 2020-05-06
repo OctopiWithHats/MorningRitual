@@ -23,6 +23,17 @@ public class WinState : MonoBehaviour {
     private GameObject performRitual;
     [SerializeField]
     private Button ritualButton;
+
+    /*
+    //winImage for lerp
+    [SerializeField]
+    private Image winPicture;
+
+    //fade speed for lerping in image
+    [SerializeField]
+    private float fadeSpeed = 1.5f;
+    */
+
     //public AudioSource background;
 
 
@@ -55,7 +66,15 @@ public class WinState : MonoBehaviour {
         GetComponent<AudioSource>().Play();
         winImage.SetActive(true);
         //performRitual.SetActive(false);
+        //FadeInImage();
     }
 
+    /*
+    void FadeInImage()
+    {
+        //lerp image to opaque
+        winPicture.color = Color.Lerp(winPicture.color, Color.black, fadeSpeed * Time.deltaTime);
+    }
+    */
 
 }

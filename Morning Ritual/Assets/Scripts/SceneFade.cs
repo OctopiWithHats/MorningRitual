@@ -18,13 +18,11 @@ public class SceneFade : MonoBehaviour
     [SerializeField]
     private bool sceneStarting = true;
 
-    //Title scene
-    [SerializeField]
-    private string sceneName;
-
+    
     // Start is called before the first frame update
     void Start()
     {
+        sceneStarting = true;
     }
 
     // Update is called once per frame
@@ -41,13 +39,13 @@ public class SceneFade : MonoBehaviour
         fadeImage.color = Color.Lerp(fadeImage.color, Color.clear, fadeSpeed * Time.deltaTime);
     }
 
-    /*
+    
     void FadeToBlack()
     {
-        //lerp image to black
-        fadeImage.color = Color.Lerp(fadeImage.color, Color.black, fadeSpeed * Time.deltaTime);
+        //lerp image to opaque
+        fadeImage.color = Color.Lerp(fadeImage.color, Color.white, fadeSpeed * Time.deltaTime);
     }
-    */
+    
 
     void StartScene()
     {
@@ -65,33 +63,4 @@ public class SceneFade : MonoBehaviour
         }
     }
 
-    /*
-    public IEnumerator EndSceneRoutine(string sceneName)
-    {
-        // Make sure the image is enabled.
-        fadeImage.enabled = true;
-        do
-        {
-            // Start fading towards black.
-            FadeToBlack();
-
-            //if image is almost black, go to correct scene
-            if (fadeImage.color.a >= 0.95f)
-            {
-                SceneManager.LoadScene(sceneName);
-                yield break;
-            }
-            else
-            {
-                yield return null;
-            }
-        } while (true);
-    }
-
-    public void EndScene(string sceneName)
-    {
-        sceneStarting = false;
-        StartCoroutine("EndSceneRoutine", sceneName);
-    }
-    */
 }
